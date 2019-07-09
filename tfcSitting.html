@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-orange w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Treats for Change<br>Baby and Pet Sitting</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pictures</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hiring and Ordering</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-orange w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-orange w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Treats for Change</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Treats for Change</b></h1>
+    <h1 class="w3-xxxlarge w3-text-orange"><b>Babysitting and Pet Sitting</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-orange"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round">
+    <p>We are a company that provides <b>babysitting</b>, <b>pet sitting</b>, and <b>tutoring services</b> in addition to <b>selling treats</b>!</p>
+    <p>Our <b>babysitting service</b> is for potty trained kids up to age 12. Rates for babysitting are $10-$20 / hour, varying depending on the number and age of children.
+    </p>
+    <p>Our <b>pet sitting service</b> is mainly for cats and dogs, but most other household pets are available for pet sitting too. Feel free to contact us if you are not sure if your pet qualifies for pet sitting! Rates for pet sitting are $15-$20 / day, varying depending on the number and type of animals.
+    </p>
+    <p>Our <b>tutoring service</b> can be ordered the same day as the appointment! The service includes the subjects: Math, History, English / Language Arts, and Spanish*.
+    </p>
+    <p>For our tutoring service, a parent/guardian must be home during the appointment, unless scheduled with babysitting.</p>
+    <ul>
+    <li>All tutoring excluding Spanish can be ordered the same day of the appointment</li>
+    <li>All textbooks, books, and schoolwork must be provided</li>
+    <li>Special requests can be made for other subjects, but some are not available</li>
+    <p>*Spanish Tutoring must be ordered ahead of time</p>
+    </ul>
+      <!-- The Treats -->
+    <p>We also sell <b>dessert foods</b> and <b>pet treats</b>! Click on the pictures to get the recipes!</p>
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-white">
+        <a href="https://www.verybestbaking.com/recipes/147421/allergen-free-chocolate-chip-cookies/">
+          <img src="https://www.meals.com/imagesrecipes/147421lrg.jpg" alt="Cookies" height=308 style="width:100%">
+        </a>
+        <div class="w3-container">
+          <h3>Cookies</h3>
+          <p class="w3-opacity">Gluten Free</p>
+          <p>$1 for 1 Cookie, $5 for 6 Cookies, $10 for 12 Cookies, $18 for 24 Cookies</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-white">
+        <a href="https://cupcakeloveblog.wordpress.com/2012/09/19/allergen-free-brownies-milk-egg-nut-soy-and-gluten-free/">
+          <img src="https://cupcakeloveblog.files.wordpress.com/2012/09/allergen-free-brownies.jpg" alt="Brownies" height=300 style="width:100%">
+        </a>
+        <div class="w3-container">
+          <h3>Brownies</h3>
+          <p class="w3-opacity">Milk, Egg, Nut, Soy, And Gluten Free</p>
+          <p>$4 for 4 Brownies, $10 for 12 Brownies, $18 for 24 brownies</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-white">
+        <a href="https://allergyawesomeness.com/the-best-allergy-friendly-chocolate-birthday-cupcakes-gluten-dairy-egg-peanut-vegan/">
+          <img src="https://i1.wp.com/allergyawesomeness.com/wp-content/uploads/2017/01/bday.cupcake.single.5x7.jpg?resize=731%2C1024&ssl=1" alt="Cupcakes" height=300 style="width:100%">
+        </a>
+        <div class="w3-container">
+          <h3>Cupcakes</h3>
+          <p class="w3-opacity">Gluten And Nut Free, Vegan</p>
+          <p>$3 for 1 Cupcake, $14 for 6 cupcakes, $24 for 12 cupcakes</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- The Pet Treats -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-white">
+        <a href="https://damndelicious.net/2015/01/07/homemade-peanut-butter-dog-treats/">
+          <img src="https://s23209.pcdn.co/wp-content/uploads/2015/01/IMG_5382edit-1.jpg" alt="Dog Treats" height=300 style="width:100%">
+        </a>
+        <div class="w3-container">
+          <h3>Dog Treats</h3>
+          <p class="w3-opacity">Homemade Peanut Butter Treats</p>
+          <p>$6 for 6 Treats, $10 for 12 Treats, $18 for 24 Treats</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-white">
+        <a href="https://www.thecookierookie.com/3-ingredient-salmon-cat-treats/">
+          <img src="https://www.thecookierookie.com/wp-content/uploads/2015/04/salmon-cat-treats-6-of-10.jpg.webp" alt="Cat Treats" height=300 style="width:100%">
+        </a>
+        <div class="w3-container">
+          <h3>Cat Treats</h3>
+          <p class="w3-opacity">Homemade Salmon Treats</p>
+          <p>$5 for 6 Treats, $9 for 12 Treats, $16 for 24 Treats (Each treat equals approximately 5 cat treats, so 6 treats would really be 30)</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-white">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51lh93vBeRL._SY679_.jpg" alt="Question Mark" height=300 style="width:100%">
+        <div class="w3-container">
+          <h3>More Coming Soon!</h3>
+          <p class="w3-opacity">Any Suggestions?</p>
+          <p>Perhaps something for a rodent?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-orange"><b>About Us.</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round">
+    <p>Our names are Aidan and Emily! We are two hard-working high school students at OPRF high school who decided to start a babysitting business that benefited the environment and our town. We are both CPR certified and have taken a Safe Sitting class with the Park District of Oak Park.
+    </p>
+    <p>10% of our profits go towards charities (The ASPCA and The Climate Reality Project). We are qualified to tutor for students up to 8th grade for Math, History, Language Arts / English, and Spanish.
+    </p>
+    <p>As teenagers, our qualifications are constantly changing, and we will update our profiles accordingly.</p>
+    <p>Emily Hsieh:</p>
+    <ul>
+      <li>4.120 GPA in Freshman Year at OPRF</li>
+      <li>Made the Dean's List in Freshman Year at OPRF</li>
+      <li>CPR certified (2019)</li>
+      <li>Completed a Safe Sitting class with the Park District of Oak Park (2019)</li>
+      <li>Honor Roll student since 6th Grade</li>
+      <li>1 Year of volunteer mentoring at Percy Julian Middle School for the Robotics Club</li>
+      <li>Has taken math up to college level algebra</li>
+      <li>4 Years of experience in Robotics</li>
+      <li>Above average score on PSAT</li>
+    </ul>
+    <p>Aidan Tijerina-Albury:</p>
+    <ul>
+      <li>4.120 GPA in Freshman Year at OPRF</li>
+      <li>Made the Dean's List in Freshman Year at OPRF</li>
+      <li>1 Year of volunteer mentoring with PING! (a program that teaches young musicians to play their instrument)</li>
+      <li>CPR certified (2019)</li>
+      <li>Completed a Safe Sitting class with the Park District of Oak Park (2019)</li>
+      <li>Honor Roll student since 6th Grade</li>
+      <li>Has taken math up to college level algebra</li>
+      <li>Above average score on PSAT</li>
+    </ul>
+    <p><b>Meet us</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Emily Hsieh</h3>
+          <p class="w3-opacity">I am...</p>
+          <ul>
+            <li>A sophomore at OPRF high school</li>
+            <li>A member of the robotics club</li>
+            <li>Interested in computer science and business</li>
+            <li>Passionate about solving the problems facing Earth today and in the future</li>
+            <li>Inclined to give back to the community of Oak Park</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Aidan Tijerina-Albury</h3>
+          <p class="w3-opacity">I am...</p>
+          <ul>
+            <li>A sophomore at OPRF high school</li>
+            <li>A member of the Marching Band</li>
+            <li>Interested in surgery and business</li>
+            <li>Passionate about helping to solve animal abuse</li>
+            <li>Constantly told I am great with kids</li>
+            <li>A baker</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Employees</h3>
+          <p class="w3-opacity">We are...</p>
+          <ul>
+            <li>All high schoolers at OPRF</li>
+            <li>Just as qualified as Emily and Aidan to babysit, pet sit, tutor, and bake</li>
+            <li>Doing this job not only to help our friends, but because we are invested in its mission</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-orange"><b>Hiring and Ordering.</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round">
+    <p>The prices of our services have been listed with their descriptions under the services tab; however, here's a brief overview:</p>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Babysitting</li>
+        <li class="w3-padding-16">For potty trained kids up to age 12</li>
+        <li class="w3-padding-16">Must be scheduled at least 1 week in advance</li>
+        <li class="w3-padding-16">Appointment can be no longer than 7 hours</li>
+        <li class="w3-padding-16">Prices may vary</li>
+        <li class="w3-padding-16">Holiday deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 10-20</h2>
+          <span class="w3-opacity">per hour</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiCASWIh4gYklavCK9OfEnnrYj6x2srMWlkDnBE4v8Jq5Mlw/viewform">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-orange w3-xlarge w3-padding-32">Pet Sitting</li>
+        <li class="w3-padding-16">For mainly cats and dogs</li>
+        <li class="w3-padding-16">Must be scheduled at least 1 week in advance</li>
+        <li class="w3-padding-16">Prices may vary</li>
+        <li class="w3-padding-16">Contact us if you have questions</li>
+        <li class="w3-padding-16">Holiday deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 15-20</h2>
+          <span class="w3-opacity">per day</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6L49GGbuJUexmXjrNfR9ryBDoN2gwxlUeNtr-q-0a8lAwrg/viewform">
+            <button class="w3-button w3-orange w3-padding-large w3-hover-black">Sign Up</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-orange w3-xlarge w3-padding-32">Tutoring</li>
+        <li class="w3-padding-16">Must be scheduled at least 1 week in advance</li>
+        <li class="w3-padding-16">Price applies to individual children</li>
+        <li class="w3-padding-16">All core subjects, and Spanish</li>
+        <li class="w3-padding-16">Parent/guardian must be home during app.</li>
+        <li class="w3-padding-16">10% discount if ordered alongside babysitting</li>
+        <li class="w3-padding-16">
+          <h2>$ 12</h2>
+          <span class="w3-opacity">per hour</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSI5NAag_qO2WdMWdSJWwt1DyFm9cQSiz2d4Z294WCnIiwhg/viewform">
+            <button class="w3-button w3-orange w3-padding-large w3-hover-black">Sign Up</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-gray w3-xlarge w3-padding-32">Treats</li>
+        <li class="w3-padding-16">Cookies</li>
+        <li class="w3-padding-16">Brownies</li>
+        <li class="w3-padding-16">Cupcakes</li>
+        <li class="w3-padding-16">Pet treats</li>
+        <li class="w3-padding-16">All allergen free</li>
+        <li class="w3-padding-16">
+          <h2>$ Depends</h2>
+          <span class="w3-opacity">per box</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <a href="https://forms.gle/DW53KCJXmnz19Gaa7">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-orange"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round">
+    <p>If you have questions, feel free to send us an email at sittingforchange@gmail.com</p>
+    <p>Feel free to leave a comment if you enjoyed our service!</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYqzejYv3eLVqkqwRD0Xg0KNtZtdSbp9kG1e1njXPfoxdslA/viewform">
+        <button type="submit" class="w3-button w3-block w3-padding-large w3-orange w3-margin-bottom">Comment</button>
+      </a>
+      <a href="https://docs.google.com/spreadsheets/d/1cxTri-bwqB2K48TmUtEmiQuMJyXVkTI1sxBfLjE88-Y/edit?usp=sharing">
+        <button type="submit" class="w3-button w3-block w3-padding-large w3-dark-gray w3-margin-bottom">See Responses</button> 
+      </a>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
